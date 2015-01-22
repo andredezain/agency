@@ -1,0 +1,308 @@
+@font-face {
+    font-family: 'lobster';
+    src: url('../font/lobster_1.3-webfont.eot');
+    src: url('../font/lobster_1.3-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/lobster_1.3-webfont.woff2') format('woff2'),
+         url('../font/lobster_1.3-webfont.woff') format('woff'),
+         url('../font/lobster_1.3-webfont.ttf') format('truetype'),
+         url('../font/lobster_1.3-webfont.svg#lobster_1.3regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'opensans';
+    src: url('../font/OpenSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.top-bar {
+	background: #fff;
+	height: 5rem;
+  	line-height: 5rem;
+}
+
+.top-bar .name {
+	height: 5rem;
+}
+
+.top-bar-section > ul > .divider, .top-bar-section > ul > [role="separator"] {
+	border:0;
+}
+
+@media only screen and (min-width: 40.063em) {
+	.top-bar {
+		background: #fff;
+		height: 5rem;
+	  	line-height: 5rem;
+	}
+	.top-bar-section li:not(.has-form) a:not(.button) {
+		background: #fff;
+		line-height: 5rem;
+	}
+}
+
+.top-bar .name h1 a, .top-bar .name h2 a, .top-bar .name h3 a, .top-bar .name h4 a, .top-bar .name p a, .top-bar .name span a {
+	color: #44c0c2;
+	padding: 0.9375rem;
+}
+
+.top-bar-section li:not(.has-form) a:not(.button) {
+	background: #fff;
+}
+
+.top-bar-section ul li > a {
+	font-family: "opensans";
+	font-size: 80%;
+	color: #484c55;
+}
+
+.name.author h1 {
+	font-family: "lobster";
+	font-size: 200%; 
+}
+
+.top-bar-section li:not(.has-form) a:not(.button):hover {
+	background-color: #fff;
+    color: #49cbcd;
+}
+
+.top-bar.expanded .title-area {
+    background: #fff;
+}
+.top-bar .toggle-topbar.menu-icon a {
+	color: #484c55;
+}
+.top-bar .toggle-topbar.menu-icon a span::after {
+	box-shadow: 0 0 0 1px #484c55, 0 7px 0 1px #484c55, 0 14px 0 1px #484c55; 
+}
+.top-bar.expanded .toggle-topbar a {
+	color: #49cbcd;
+}
+.top-bar.expanded .toggle-topbar a span::after {
+    box-shadow: 0 0 0 1px #49cbcd, 0 7px 0 1px #49cbcd, 0 14px 0 1px #49cbcd; 
+}
+.top-bar-section ul li {
+	background: #eee;
+}
+.sliderz.contained.columns {
+	height: 500px;
+	background: #fff url("../img/banner.jpg") no-repeat center center;
+	text-align: center;
+	color: #fff;
+}
+.sliderz.contained.columns h1 {
+	margin-top:10%;
+	font-family: "opensans";
+	font-weight: bold;
+	font-size: 300%;
+	color: #fff;
+}
+.sliderz.contained.columns p {
+	font-family: "opensans";
+	font-size: 100%;
+}
+.bwhite.button {
+	background: transparent;
+	color: #fff;
+	font-family: "opensans"
+	font-weight: bold;
+	font-size: 130%;
+	border: 2px solid #fff;
+	border-radius: 5px;
+}
+.bservicez {
+	color: #49cbcd;
+	border: 3px solid #49cbcd;
+	margin: 0;
+	padding:25px 0 0 0;
+	margin: auto;
+	width: 120px;
+	height: 120px;
+	border-radius: 120px;
+}
+.hservicez {
+	padding:1.5em 0 0 0;
+	font-family: "opensans";
+	font-size: 130%;
+	font-weight: bold;
+	color: #4e525d;
+}
+.pservicez {
+	font-family: "opensans";
+	font-size: 80%;
+	color: #4e525d;
+}
+.bluez.button {
+	background: #49cbcd;
+	color: #fff;
+	border-radius: 3px;
+	font-family: "opensans";
+	font-size: 90%;
+	font-weight: bold;
+	padding:10px 25px 10px 25px;
+}
+.bluez.button:hover {
+	background: #44b9bb;
+}
+.grayz.button {
+	background: #788492;
+	color: #fff;
+	border-radius: 3px;
+	font-family: "opensans";
+	font-size: 90%;
+	font-weight: bold;
+	padding:10px 25px 10px 25px;
+}
+.grayz.button:hover {
+	background: #6b7682;
+}
+.hportfolio {
+	padding-top:0.8em;
+	font-family: "opensans";
+	font-size: 200%;
+	color: #4e525d;
+}
+.htheteam {
+	padding-top:0.8em;
+	font-family: "opensans";
+	font-size: 200%;
+	color: #4e525d;
+}
+.tmemberz {
+	width: 125px;
+	height: 125px;
+	background: #ccc;
+	border-radius: 125px;
+	margin:auto;
+}
+.hmemberz {
+	margin-top:1.8em;
+	margin-bottom: 0;
+	color: #4e525d;
+	font-family: "opensans";
+	font-size: 135%;
+	font-weight: normal;
+}
+.pmemberz {
+	margin-top: 1em;
+	font-family: "opensans";
+	font-size: 75%;
+	color: #4e525d;
+}
+.pricing-table .title {
+    background-color: #485460;
+    font-family: "opensans";
+    font-size: 140%;
+    padding: 1.3rem 1rem;
+}
+.pricing-table .aktip.title {
+	background-color: #49cbcd;
+}
+.pricing-table .price {
+	color: #4e525d;
+	font-family: "opensans";
+	font-size: 120%;
+	font-weight: normal;
+}
+.pricing-table .description {
+	color: #8c9299;
+	font-family: "opensans";
+	font-size: 70%;
+}
+.pricing-table .bullet-item {
+	color: #8c9299;
+	font-family: "opensans";
+	font-size: 80%;
+}
+.hclientz {
+	color: #4e525d;
+	font-family: "opensans";
+	font-weight: normal;
+	font-size: 200%;
+}
+.pclientz {
+	color: #4e525d;
+	font-family: "opensans";
+	font-weight: normal;
+	font-size: 100%;
+}
+.h4clientz {
+	color: #9a8faf;
+	font-family: "opensans";
+	font-weight: normal;
+	font-size: 135%;
+}
+.sliderz .orbit-bullets {
+	display: none;
+}
+.sliderz .orbit-container .orbit-prev, .sliderz .orbit-container .orbit-next {
+	width: 60px;
+	height: 60px;
+	border-radius: 60px;
+	margin-top: 45px;
+}
+.sliderz .orbit-container .orbit-prev:hover, .sliderz .orbit-container .orbit-next:hover {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #49cbcd;
+}
+.sliderz .orbit-container .orbit-prev {
+	padding-left: 13px;
+}
+.footerz.contained.columns {
+	height: 700px;
+	background: #404040 url("../img/footer.jpg")no-repeat center center;
+}
+.footerz h2 {
+	color:#fff;
+	font-family: "opensans";
+	font-size: 200%;
+	font-weight: normal;
+}
+.footerz h4 {
+	color: #fff;
+	font-family: "opensans";
+	font-size: 140%;
+	font-weight: normal;
+}
+.footerz p {
+	color: rgba(255, 255, 255, 0.50);
+	font-family: "opensans";
+	font-size: 90%;
+	font-weight: normal;
+}
+.footerz input {
+	border-radius: 3px;
+}
+.footerz textarea {
+	height:180px;
+	border-radius: 3px;
+}
+.bfacebook {
+	color:#fff;
+	background: #3b5997;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin:0 10px 0 0;
+	padding:14px 0 0 19px;
+}
+.btwitter {
+	color:#fff;
+	background: #3ec2f3;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin:0 10px 0 0;
+	padding:14px 0 0 16px;
+}
+.bgoogleplus {
+	color:#fff;
+	background: #e44c41;
+	width: 50px;
+	height: 50px;
+	border-radius: 50px;
+	margin:0;
+	padding:14px 0 0 16px;
+}
