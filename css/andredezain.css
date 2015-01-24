@@ -87,13 +87,17 @@
 	background: #eee;
 }
 .sliderz.contained.columns {
-	height: 500px;
-	background: #fff url("../img/banner.jpg") no-repeat center center;
+	min-height: 500px;
+	background-image: url("../img/banner.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
 	text-align: center;
 	color: #fff;
 }
 .sliderz.contained.columns h1 {
-	margin-top:10%;
+	margin-top:2.8em;
 	font-family: "opensans";
 	font-weight: bold;
 	font-size: 300%;
@@ -244,15 +248,26 @@
 	margin-top: 45px;
 }
 .sliderz .orbit-container .orbit-prev:hover, .sliderz .orbit-container .orbit-next:hover {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(255, 255, 255, 0.75);
     color: #49cbcd;
 }
 .sliderz .orbit-container .orbit-prev {
 	padding-left: 13px;
 }
+.sliderz .orbit-container .orbit-next:hover > span {
+    border-left-color: #49cbcd;
+}
+.sliderz .orbit-container .orbit-prev:hover > span {
+    border-right-color: #49cbcd;
+}
+
 .footerz.contained.columns {
-	height: 700px;
-	background: #404040 url("../img/footer.jpg")no-repeat center center;
+	min-height: 700px;
+	background-image: url("../img/footer.jpg");
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	background-attachment: fixed;
+	background-size: cover;
 }
 .footerz h2 {
 	color:#fff;

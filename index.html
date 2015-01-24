@@ -21,15 +21,15 @@
   				<li class="divider"></li>
   				<li class=""><a href="#">Home</a></li>
   				<li class="divider"></li>
-  				<li class=""><a href="#">Service</a></li>
+  				<li class=""><a href="#service">Service</a></li>
   				<li class="divider"></li>
-  				<li class=""><a href="#">Portfolio</a></li>
+  				<li class=""><a href="#portfolio">Portfolio</a></li>
   				<li class="divider"></li>
-  				<li class=""><a href="#">Team</a></li>
+  				<li class=""><a href="#team">Team</a></li>
   				<li class="divider"></li>
   				<li class=""><a href="#">Blog</a></li>
   				<li class="divider"></li>
-  				<li class=""><a href="#">Contact</a></li>							
+  				<li class=""><a href="#contact">Contact</a></li>							
   			</ul>
   		</section>
   	</nav>
@@ -62,26 +62,27 @@
 </div>
 <div class="contained columns">
 <div class="row" style="margin-top:2em;margin-bottom:2em;">
+	<a id="service"></a>
 	<div class="medium-6 large-3 columns" style="text-align:center; margin-top:2em; margin-bottom:2em;">
-		<div class="bservicez"><i class=" fa fa-rocket fa-3x" style="padding-top:0.2em;"></i></div>
+		<div class="bservicez"><i class="fa fa-rocket fa-3x" style="padding-top:0.2em;"></i></div>
 		<h3 class="hservicez">Custom Designs</h3>
 		<p class="pservicez">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
 		<a class="bluez button" href="#">Read More</a>
 	</div>
 	<div class="medium-6 large-3 columns" style="text-align:center; margin-top:2em; margin-bottom:2em;">
-		<div class="bservicez"><i class=" fa fa-desktop fa-3x" style="padding-top:0.2em;"></i></div>
+		<div class="bservicez"><i class="fa fa-desktop fa-3x" style="padding-top:0.2em;"></i></div>
 		<h3 class="hservicez">Web Design</h3>
 		<p class="pservicez">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
 		<a class="bluez button" href="#">Read More</a>
 	</div>
 	<div class="medium-6 large-3 columns" style="text-align:center; margin-top:2em; margin-bottom:2em;">
-		<div class="bservicez"><i class=" fa fa-file fa-3x" style="padding-top:0.2em;"></i></div>
+		<div class="bservicez"><i class="fa fa-lightbulb-o fa-3x" style="padding-top:0.2em;"></i></div>
 		<h3 class="hservicez">Blog Pages</h3>
 		<p class="pservicez">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
 		<a class="bluez button" href="#">Read More</a>
 	</div>
 	<div class="medium-6 large-3 columns" style="text-align:center; margin-top:2em; margin-bottom:2em;">
-		<div class="bservicez"><i class=" fa fa-tablet fa-3x" style="padding-top:0.2em;"></i></div>
+		<div class="bservicez"><i class="fa fa-tablet fa-3x" style="padding-top:0.2em;"></i></div>
 		<h3 class="hservicez">Mobile Friendly</h3>
 		<p class="pservicez">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been</p>
 		<a class="bluez button" href="#">Read More</a>
@@ -90,6 +91,7 @@
 </div>
 <div class="contained columns" style="background:#f1f1f1;">
 	<div class="row" style="text-align:center;margin-top:1em;margin-bottom:3em;">
+		<a id="portfolio"></a>
 		<h2 class="hportfolio">Portfolio</h2>
 		<div class="medium-6 large-4 columns" style="margin-top:1em;margin-bottom:1em">
 			<a class="th" href="#"><img src="./img/portfolio/1.jpg"/></a>
@@ -114,6 +116,7 @@
 </div>
 <div class="contained columns">
 	<div class="row" style="text-align:center;margin-top:1em;margin-bottom:3em;">
+		<a id="team"></a>
 		<h2 class="htheteam">The Team</h2>
 		<div class="medium-6 large-3 columns" style="text-align:center; margin-top:5em; margin-bottom:2em;">
 			<div class="tmemberz"></div>
@@ -195,6 +198,7 @@
 </div>
 <div class="footerz contained columns">
 	<div class="row" style="margin-top:6em;">
+		<a id="contact"></a>
 		<h2 style="text-align:center">Contact Us</h2>
 		<div class="medium-6 large-6 columns" style="margin-top:5.5em">
 			<h4>Get in touch with us</h4>
@@ -230,12 +234,27 @@
 </div>
     <script src="js/vendor/jquery.js"></script>
     <script src="js/foundation.min.js"></script>
+    <script src="js/foundation/foundation.magellan.js"></script>
     <script>
-      $(document).foundation({
-		  orbit: {
-		      resume_on_mouseout: true, // If pause on hover is set to true, this setting resumes playback after mousing out of slide
-		  }
-	  });
+	    $(document).foundation({
+			orbit: {
+			    resume_on_mouseout: true, // If pause on hover is set to true, this setting resumes playback after mousing out of slide
+			}
+		});
+		$(document).ready(function(){
+			$('a[href^="#"]').on('click',function (e) {
+			    e.preventDefault();
+
+			    var target = this.hash;
+			    var $target = $(target);
+
+			    $('html, body').stop().animate({
+			        'scrollTop': $target.offset().top
+			    }, 900, 'swing', function () {
+			        window.location.hash = target;
+			    });
+			});
+		});
     </script>
   </body>
 </html>
